@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lovique Gifts - Handmade Gifts Made with Love 💝 | Aesthetic handmade gifts from India.">
+    <title>Lovique Gifts • Handmade with Love 💝</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.35)), url('https://picsum.photos/id/1015/2000/1200') center/cover no-repeat;
+        }
+
+        .product-card {
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px -10px rgba(248, 193, 212, 0.3);
+        }
+        
+        .product-card img {
+            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        
+        .product-card:hover img {
+            transform: scale(1.12);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #f8c1d4;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        .heart-float {
+            animation: floatHeart 3s ease-in-out infinite;
+        }
+
+        @keyframes floatHeart {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body class="bg-[#fffaf5] text-gray-800 smooth-scroll overflow-x-hidden">
+
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-pink-100">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center">
+                <img src="logo.png" alt="Lovique Gifts" class="h-14 w-auto">
+            </a>
+
+            <!-- Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#home" class="nav-link text-gray-700 hover:text-pink-600">Home</a>
+                <a href="#products" class="nav-link text-gray-700 hover:text-pink-600">Collection</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-pink-600">Our Story</a>
+                <a href="#instagram" class="nav-link text-gray-700 hover:text-pink-600">Instagram</a>
+            </nav>
+
+            <!-- Instagram Button -->
+            <a href="https://www.instagram.com/lovique.gifts" target="_blank" 
+               class="flex items-center gap-2 bg-pink-100 hover:bg-pink-200 text-pink-600 px-6 py-3 rounded-3xl text-sm font-medium">
+                <i class="fab fa-instagram text-lg"></i>
+                <span class="hidden sm:inline">@lovique.gifts</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero-bg min-h-screen flex items-center relative">
+        <div class="max-w-5xl mx-auto px-6 text-center text-white z-10">
+            <div class="max-w-2xl mx-auto">
+                <p class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white text-sm font-medium px-6 py-2 rounded-3xl mb-6">
+                    <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
+                    Handcrafted in India
+                </p>
+                
+                <h1 class="heading-font text-6xl md:text-7xl font-bold leading-tight mb-6">
+                    Handmade Gifts<br>Made with <span class="text-pink-300">Love</span> 💝
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-pink-100 max-w-md mx-auto mb-10">
+                    Thoughtful, aesthetic pieces crafted with care for the special people in your life.
+                </p>
+                
+                <a href="#products" 
+                   class="bg-white text-pink-600 hover:bg-pink-50 font-semibold px-10 py-4 rounded-3xl text-lg inline-flex items-center justify-center gap-3 group">
+                    View Collection
+                    <span class="group-hover:translate-x-1 inline-block">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="https://picsum.photos/id/1016/800/1000" 
+                         alt="Lovique Gifts Studio" 
+                         class="rounded-3xl shadow-2xl w-full h-full object-cover">
+                </div>
+                <div class="space-y-8">
+                    <h2 class="heading-font text-5xl font-semibold leading-tight text-gray-800">
+                        Every gift tells a story of love
+                    </h2>
+                    <div class="text-lg text-gray-600 leading-relaxed space-y-6">
+                        <p>
+                            Lovique Gifts was born with one simple dream — to create meaningful, handmade gifts 
+                            that carry warmth and emotion.
+                        </p>
+                        <p>
+                            Each piece is lovingly crafted by hand using soft ribbons, delicate pipe cleaners, 
+                            vintage-style frames, and heartfelt details.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT GALLERY -->
+    <section id="products" class="py-24 bg-[#fffaf5]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="heading-font text-5xl font-bold text-gray-800">Our Collection</h2>
+                <p class="text-gray-600 mt-3">Handcrafted with love in India</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <div class="product-card bg-white group">
+                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/201/600/600" alt="Ribbon Bouquet" class="w-full h-full object-cover"></div>
+                    <div class="p-6"><h3 class="font-medium text-lg">Ribbon Bouquets</h3></div>
+                </div>
+                <div class="product-card bg-white group">
+                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/251/600/600" alt="Pipe Cleaner Bouquet" class="w-full h-full object-cover"></div>
+                    <div class="p-6"><h3 class="font-medium text-lg">Pipe Cleaner Flowers</h3></div>
+                </div>
+                <div class="product-card bg-white group">
+                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/367/600/600" alt="Custom Photo Frame" class="w-full h-full object-cover"></div>
+                    <div class="p-6"><h3 class="font-medium text-lg">Personalized Frames</h3></div>
+                </div>
+                <div class="product-card bg-white group">
+                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/433/600/600" alt="Polaroid Keepsakes" class="w-full h-full object-cover"></div>
+                    <div class="p-6"><h3 class="font-medium text-lg">Polaroid Keepsakes</h3></div>
+                </div>
+                <div class="product-card bg-white group">
+                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/669/600/600" alt="Gift Hamper" class="w-full h-full object-cover"></div>
+                    <div class="p-6"><h3 class="font-medium text-lg">Signature Hampers</h3></div>
+                </div>
+                <div class="product-card bg-white group">
+                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/870/600/600" alt="Wall Posters" class="w-full h-full object-cover"></div>
+                    <div class="p-6"><h3 class="font-medium text-lg">Wall Posters</h3></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM SECTION -->
+    <section id="instagram" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-5xl font-semibold">Follow Our Journey</h2>
+                <p class="text-gray-600 mt-3">Behind the scenes • New creations • Customer love stories</p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+                <img src="https://picsum.photos/id/201/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="https://picsum.photos/id/251/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="https://picsum.photos/id/367/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="https://picsum.photos/id/433/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="https://picsum.photos/id/669/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="https://picsum.photos/id/870/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="https://www.instagram.com/lovique.gifts" target="_blank"
+                   class="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-400 text-white px-10 py-4 rounded-3xl font-medium text-lg">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    Follow @lovique.gifts
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 bg-[#fffaf5]">
+        <div class="max-w-3xl mx-auto px-6 text-center">
+            <div class="mb-12">
+                <div class="inline-flex items-center justify-center w-20 h-20 bg-pink-100 rounded-3xl text-5xl mb-6">
+                    💌
+                </div>
+                <h2 class="heading-font text-5xl font-semibold mb-4">Let's Stay Connected</h2>
+                <p class="text-xl text-gray-600">We’d love to hear from you on Instagram</p>
+            </div>
+
+            <a href="https://www.instagram.com/lovique.gifts" target="_blank"
+               class="inline-flex items-center gap-5 bg-white hover:bg-pink-50 border border-pink-200 px-14 py-7 rounded-3xl shadow-sm">
+                <div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-rose-500 rounded-2xl flex items-center justify-center text-white text-4xl">
+                    📸
+                </div>
+                <div class="text-left">
+                    <div class="font-semibold text-2xl">Instagram</div>
+                    <div class="text-pink-600 text-lg">@lovique.gifts</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center mb-6">
+                <img src="logo.png" alt="Lovique Gifts" class="h-16 w-auto">
+            </div>
+            <p class="heading-font text-3xl mb-2">lovique gifts</p>
+            <p class="text-pink-300">Made with 💝 in India</p>
+            
+            <div class="mt-12 pt-8 border-t border-gray-800 text-gray-400 text-sm">
+                © 2026 Lovique Gifts • All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        console.log('%cLovique Gifts website loaded successfully 💝', 'color: #f8c1d4; font-family: monospace;');
+    </script>
+</body>
+</html>
