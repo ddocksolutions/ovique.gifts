@@ -54,28 +54,17 @@
         .nav-link:hover:after {
             width: 100%;
         }
-
-        .heart-float {
-            animation: floatHeart 3s ease-in-out infinite;
-        }
-
-        @keyframes floatHeart {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
-        }
     </style>
 </head>
-<body class="bg-[#fffaf5] text-gray-800 smooth-scroll overflow-x-hidden">
+<body class="bg-[#fffaf5] text-gray-800 overflow-x-hidden">
 
     <!-- HEADER -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-pink-100">
         <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <!-- Logo -->
             <a href="#" class="flex items-center">
                 <img src="logo.png" alt="Lovique Gifts" class="h-14 w-auto">
             </a>
 
-            <!-- Navigation -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#home" class="nav-link text-gray-700 hover:text-pink-600">Home</a>
                 <a href="#products" class="nav-link text-gray-700 hover:text-pink-600">Collection</a>
@@ -83,10 +72,9 @@
                 <a href="#instagram" class="nav-link text-gray-700 hover:text-pink-600">Instagram</a>
             </nav>
 
-            <!-- Instagram Button -->
             <a href="https://www.instagram.com/lovique.gifts" target="_blank" 
                class="flex items-center gap-2 bg-pink-100 hover:bg-pink-200 text-pink-600 px-6 py-3 rounded-3xl text-sm font-medium">
-                <i class="fab fa-instagram text-lg"></i>
+                <i class="fab fa-instagram"></i>
                 <span class="hidden sm:inline">@lovique.gifts</span>
             </a>
         </div>
@@ -94,25 +82,20 @@
 
     <!-- HERO -->
     <section id="home" class="hero-bg min-h-screen flex items-center relative">
-        <div class="max-w-5xl mx-auto px-6 text-center text-white z-10">
+        <div class="max-w-5xl mx-auto px-6 text-center text-white">
             <div class="max-w-2xl mx-auto">
                 <p class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white text-sm font-medium px-6 py-2 rounded-3xl mb-6">
-                    <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
                     Handcrafted in India
                 </p>
-                
                 <h1 class="heading-font text-6xl md:text-7xl font-bold leading-tight mb-6">
                     Handmade Gifts<br>Made with <span class="text-pink-300">Love</span> 💝
                 </h1>
-                
-                <p class="text-xl md:text-2xl text-pink-100 max-w-md mx-auto mb-10">
+                <p class="text-xl md:text-2xl text-pink-100 mb-10">
                     Thoughtful, aesthetic pieces crafted with care for the special people in your life.
                 </p>
-                
                 <a href="#products" 
-                   class="bg-white text-pink-600 hover:bg-pink-50 font-semibold px-10 py-4 rounded-3xl text-lg inline-flex items-center justify-center gap-3 group">
-                    View Collection
-                    <span class="group-hover:translate-x-1 inline-block">→</span>
+                   class="bg-white text-pink-600 hover:bg-pink-50 font-semibold px-10 py-4 rounded-3xl text-lg inline-flex items-center gap-3">
+                    View Collection →
                 </a>
             </div>
         </div>
@@ -125,7 +108,7 @@
                 <div>
                     <img src="https://picsum.photos/id/1016/800/1000" 
                          alt="Lovique Gifts Studio" 
-                         class="rounded-3xl shadow-2xl w-full h-full object-cover">
+                         class="rounded-3xl shadow-2xl w-full object-cover">
                 </div>
                 <div class="space-y-8">
                     <h2 class="heading-font text-5xl font-semibold leading-tight text-gray-800">
@@ -155,29 +138,117 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                
+                <!-- Product 1 -->
                 <div class="product-card bg-white group">
-                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/201/600/600" alt="Ribbon Bouquet" class="w-full h-full object-cover"></div>
-                    <div class="p-6"><h3 class="font-medium text-lg">Ribbon Bouquets</h3></div>
+                    <div class="aspect-square overflow-hidden">
+                        <img src="images/product-1.jpg" 
+                             alt="Ribbon Bouquet" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-medium text-lg mb-2">Rose Bouquets</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Flowers that bloom forever, just like your memories.<br>
+                            A bouquet that never fades, for a love that never ends.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Product 2 -->
                 <div class="product-card bg-white group">
-                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/251/600/600" alt="Pipe Cleaner Bouquet" class="w-full h-full object-cover"></div>
-                    <div class="p-6"><h3 class="font-medium text-lg">Pipe Cleaner Flowers</h3></div>
+                    <div class="aspect-square overflow-hidden">
+                        <img src="images/product-2.jpg" 
+                             alt="Pipe Cleaner Flowers" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-medium text-lg mb-2">Pipe Cleaner Bouquets</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            For a love that's as bright and lasting as these blooms.<br>
+                            Giving you flowers that will never lose their glow.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Product 3 -->
                 <div class="product-card bg-white group">
-                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/367/600/600" alt="Custom Photo Frame" class="w-full h-full object-cover"></div>
-                    <div class="p-6"><h3 class="font-medium text-lg">Personalized Frames</h3></div>
+                    <div class="aspect-square overflow-hidden">
+                        <img src="images/product-3.jpg" 
+                             alt="Someones" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-medium text-lg">Someones</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            A sweet little bundle made with love 💐✨<br>
+                            Perfect to surprise someone and make them smile 💕.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Product 4 -->
                 <div class="product-card bg-white group">
-                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/433/600/600" alt="Polaroid Keepsakes" class="w-full h-full object-cover"></div>
-                    <div class="p-6"><h3 class="font-medium text-lg">Polaroid Keepsakes</h3></div>
+                    <div class="aspect-square overflow-hidden">
+                        <img src="images/product-4.jpg" 
+                             alt="Polaroid Keepsakes" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-medium text-lg">Premium Frame</Frame></h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Custom Sizes, Classic Designs,<br>
+                            Elegant Finishes.
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Product 5 -->
                 <div class="product-card bg-white group">
-                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/669/600/600" alt="Gift Hamper" class="w-full h-full object-cover"></div>
-                    <div class="p-6"><h3 class="font-medium text-lg">Signature Hampers</h3></div>
+                    <div class="aspect-square overflow-hidden">
+                        <img src="images/product-5.jpg" 
+                             alt="Gift Hamper" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-medium text-lg">Combo Mini Frames</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Create Your Gallery Wall<br>
+                            Set of 6 or More
+                        </p>
+                    </div>
                 </div>
+
+                <!-- Product 6 -->
                 <div class="product-card bg-white group">
-                    <div class="aspect-square overflow-hidden"><img src="https://picsum.photos/id/870/600/600" alt="Wall Posters" class="w-full h-full object-cover"></div>
-                    <div class="p-6"><h3 class="font-medium text-lg">Wall Posters</h3></div>
+                    <div class="aspect-square overflow-hidden">
+                        <img src="images/product-6.jpg" 
+                             alt="Wall Posters" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-medium text-lg">Curated Hampers</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Thoughtful Gift Sets for<br>
+                            Every Occasion
+                        </p>
+                    </div>
+                </div>
+
+                  <!-- Product 5 -->
+                <div class="product-card bg-white group">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="images/product-7.jpg" 
+                             alt="Gift Hamper" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-medium text-lg">Vintage Polaroids</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Instax Prints & Unique Displays<br>
+                            Turn Photos into Art
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -190,19 +261,17 @@
                 <h2 class="heading-font text-5xl font-semibold">Follow Our Journey</h2>
                 <p class="text-gray-600 mt-3">Behind the scenes • New creations • Customer love stories</p>
             </div>
-            
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
-                <img src="https://picsum.photos/id/201/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
-                <img src="https://picsum.photos/id/251/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
-                <img src="https://picsum.photos/id/367/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
-                <img src="https://picsum.photos/id/433/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
-                <img src="https://picsum.photos/id/669/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
-                <img src="https://picsum.photos/id/870/600/600" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="images/product-1.jpg" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="images/product-2.jpg" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="images/product-3.jpg" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="images/product-4.jpg" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="images/product-5.jpg" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
+                <img src="images/product-6.jpg" alt="" class="rounded-3xl aspect-square object-cover hover:scale-105 transition-transform">
             </div>
-
             <div class="text-center mt-12">
                 <a href="https://www.instagram.com/lovique.gifts" target="_blank"
-                   class="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-400 text-white px-10 py-4 rounded-3xl font-medium text-lg">
+                   class="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-rose-400 text-white px-10 py-4 rounded-3xl font-medium">
                     <i class="fab fa-instagram text-2xl"></i>
                     Follow @lovique.gifts
                 </a>
@@ -213,14 +282,9 @@
     <!-- CONTACT -->
     <section id="contact" class="py-24 bg-[#fffaf5]">
         <div class="max-w-3xl mx-auto px-6 text-center">
-            <div class="mb-12">
-                <div class="inline-flex items-center justify-center w-20 h-20 bg-pink-100 rounded-3xl text-5xl mb-6">
-                    💌
-                </div>
-                <h2 class="heading-font text-5xl font-semibold mb-4">Let's Stay Connected</h2>
-                <p class="text-xl text-gray-600">We’d love to hear from you on Instagram</p>
-            </div>
-
+            <h2 class="heading-font text-5xl font-semibold mb-6">Let's Stay Connected</h2>
+            <p class="text-xl text-gray-600 mb-10">We’d love to hear from you!</p>
+            
             <a href="https://www.instagram.com/lovique.gifts" target="_blank"
                class="inline-flex items-center gap-5 bg-white hover:bg-pink-50 border border-pink-200 px-14 py-7 rounded-3xl shadow-sm">
                 <div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-rose-500 rounded-2xl flex items-center justify-center text-white text-4xl">
@@ -228,7 +292,7 @@
                 </div>
                 <div class="text-left">
                     <div class="font-semibold text-2xl">Instagram</div>
-                    <div class="text-pink-600 text-lg">@lovique.gifts</div>
+                    <div class="text-pink-600">@lovique.gifts</div>
                 </div>
             </a>
         </div>
@@ -249,8 +313,5 @@
         </div>
     </footer>
 
-    <script>
-        console.log('%cLovique Gifts website loaded successfully 💝', 'color: #f8c1d4; font-family: monospace;');
-    </script>
 </body>
 </html>
